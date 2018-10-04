@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-10-04 12:52+0000\n"
+"POT-Creation-Date: 2018-10-04 13:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,46 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: ulearn5.demo\n"
 
+#: ../userschema.py:28
+msgid ""
+msgstr ""
+
 #: ../configure.zcml:21
 msgid "Installs the ulearn5.demo add-on."
 msgstr ""
 
 #: ../configure.zcml:30
 msgid "Uninstalls the ulearn5.demo add-on."
+msgstr ""
+
+#. Default: "Contacte telefònic"
+#: ../userschema.py:61
+msgid "help_telefon"
+msgstr ""
+
+#. Default: "Fill in your Twitter username."
+#: ../userschema.py:35
+msgid "help_twitter"
+msgstr ""
+
+#. Default: "Equip, Àrea / Companyia / Departament"
+#: ../userschema.py:48
+msgid "help_ubicacio"
+msgstr ""
+
+#. Default: "Telèfon"
+#: ../userschema.py:60
+msgid "label_telefon"
+msgstr ""
+
+#. Default: "Twitter username"
+#: ../userschema.py:34
+msgid "label_twitter"
+msgstr ""
+
+#. Default: "Ubicació"
+#: ../userschema.py:47
+msgid "label_ubicacio"
 msgstr ""
 
 #: ../configure.zcml:21

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GenWebUPC\n"
-"POT-Creation-Date: 2018-10-04 12:52+0000\n"
-"PO-Revision-Date: 2018-09-28 09:23+0100\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2018-10-04 16:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,42 @@ msgstr "Instal·la el complement ulearn5.demo."
 #: ../configure.zcml:30
 msgid "Uninstalls the ulearn5.demo add-on."
 msgstr "Desinstal·la el complement ulearn5.demo."
+
+#. Default: "Contacte telefònic"
+#: ../userschema.py:61
+#, fuzzy
+msgid "help_telefon"
+msgstr "Contacte telefònic"
+
+#. Default: "Fill in your Twitter username."
+#: ../userschema.py:35
+#, fuzzy
+msgid "help_twitter"
+msgstr "Introdueix el teu nom d'usuari de Twitter"
+
+#. Default: "Equip, Àrea / Companyia / Departament"
+#: ../userschema.py:48
+#, fuzzy
+msgid "help_ubicacio"
+msgstr "Equip, Àrea / Companyia / Departament"
+
+#. Default: "Telèfon"
+#: ../userschema.py:60
+#, fuzzy
+msgid "label_telefon"
+msgstr "Telèfon"
+
+#. Default: "Twitter username"
+#: ../userschema.py:34
+#, fuzzy
+msgid "label_twitter"
+msgstr "Twitter"
+
+#. Default: "Ubicació"
+#: ../userschema.py:47
+#, fuzzy
+msgid "label_ubicacio"
+msgstr "Ubicació"
 
 #: ../configure.zcml:21
 msgid "ulearn5.demo"

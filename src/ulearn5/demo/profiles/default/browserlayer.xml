@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="ulearn5.demo"
+      interface="ulearn5.demo.interfaces.IUlearn5DemoLayer"
+      />
+</layers>

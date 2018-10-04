@@ -11,26 +11,20 @@
 
   <include package=".browser" />
 
-  <plone:static
-      directory="theme"
-      type="theme"
-      name="ulearn5.demo"
-      />
-
   <genericsetup:registerProfile
       name="default"
-      title="Plone Theme: ulearn5.demo"
+      title="ulearn5.demo"
       directory="profiles/default"
-      description="Installs the Plone theme package ulearn5.demo."
+      description="Installs the ulearn5.demo add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="Uninstall: Plone Theme: ulearn5.demo"
+      title="ulearn5.demo (unistall)"
       directory="profiles/uninstall"
-      description="Uninstalls the Plone theme package ulearn5.demo."
+      description="Uninstalls the ulearn5.demo add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.uninstall"
       />

@@ -1,34 +1,33 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: GenWebUPC\n"
 "POT-Creation-Date: 2018-10-04 12:52+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-09-28 09:25+0100\n"
+"Last-Translator: \n"
+"Language-Team: Plone Team@UPCnet <>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: ulearn5.demo\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: en\n"
 
 #: ../configure.zcml:21
 msgid "Installs the ulearn5.demo add-on."
-msgstr ""
+msgstr "Installs the ulearn5.demo add-on."
 
 #: ../configure.zcml:30
 msgid "Uninstalls the ulearn5.demo add-on."
-msgstr ""
+msgstr "Uninstalls the ulearn5.demo add-on."
 
 #: ../configure.zcml:21
 msgid "ulearn5.demo"
-msgstr ""
+msgstr "ulearn5.demo"
 
 #: ../configure.zcml:30
 msgid "ulearn5.demo (unistall)"
-msgstr ""
+msgstr "ulearn5.demo (unistall)"

@@ -17,7 +17,7 @@ from zope.component import adapts
 from zope.interface import Interface
 from zope.interface import implementer
 
-from ulearn5.core import _
+from ulearn5.demo import _
 from ulearn5.demo.interfaces import IUlearn5DemoLayer
 from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
 from ulearn5.core.widgets.visibility_widget import VisibilityFieldWidget

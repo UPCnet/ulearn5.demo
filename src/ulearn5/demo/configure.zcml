@@ -1,9 +1,10 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    i18n_domain="ulearn5.demo">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="ulearn5.demo">
 
   <i18n:registerTranslations directory="locales" />
 
@@ -11,26 +12,46 @@
 
   <include package=".browser" />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="ulearn5.demo"
-      directory="profiles/default"
-      description="Installs the ulearn5.demo add-on."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
-      />
+  <!-- ++theme++ulearn5.demo -->
+  <plone:static
+    directory="theme"
+    type="theme"
+    name="ulearn5.demo"
+    />
 
   <genericsetup:registerProfile
-      name="uninstall"
-      title="ulearn5.demo (unistall)"
-      directory="profiles/uninstall"
-      description="Uninstalls the ulearn5.demo add-on."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.uninstall"
-      />
+    name="default"
+    title="ulearn5.demo"
+    directory="profiles/default"
+    description="Installs the ulearn5.demo add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    post_handler=".setuphandlers.post_install"
+    />
+
+  <genericsetup:registerProfile
+    name="uninstall"
+    title="ulearn5.demo (unistall)"
+    directory="profiles/uninstall"
+    description="Uninstalls the ulearn5.demo add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    post_handler=".setuphandlers.uninstall"
+    />
 
   <utility
-      factory=".setuphandlers.HiddenProfiles"
-      name="ulearn5.demo-hiddenprofiles" />
+    factory=".setuphandlers.HiddenProfiles"
+    name="ulearn5.demo-hiddenprofiles"
+    />
+
+  <browser:jbot
+    directory="templates"
+    layer=".interfaces.IUlearn5DemoLayer"
+    />
+
+  <genericsetup:importStep
+    name="ulearn5.demo"
+    title="ulearn5.demo setupVarious"
+    description="Setup demo site theme"
+    handler="ulearn5.demo.setuphandlers.setupVarious"
+    />
 
 </configure>

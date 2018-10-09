@@ -1,0 +1,12 @@
+/*Put here custom CSS for client customizations*/
+
+.template-login_form,
+.template-logged_out,
+.template-login_failed {
+    background: url(++theme++ulearn5.demo/assets/images/background-login.jpg) no-repeat center center fixed !important;
+}
+
+
+#image_login {
+    max-width: 30rem;
+}

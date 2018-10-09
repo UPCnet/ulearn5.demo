@@ -26,37 +26,31 @@ msgstr "Desinstal·la el complement ulearn5.demo."
 
 #. Default: "Contacte telefònic"
 #: ../userschema.py:61
-#, fuzzy
 msgid "help_telefon"
 msgstr "Contacte telefònic"
 
 #. Default: "Fill in your Twitter username."
 #: ../userschema.py:35
-#, fuzzy
 msgid "help_twitter"
 msgstr "Introdueix el teu nom d'usuari de Twitter"
 
 #. Default: "Equip, Àrea / Companyia / Departament"
 #: ../userschema.py:48
-#, fuzzy
 msgid "help_ubicacio"
 msgstr "Equip, Àrea / Companyia / Departament"
 
 #. Default: "Telèfon"
 #: ../userschema.py:60
-#, fuzzy
 msgid "label_telefon"
 msgstr "Telèfon"
 
 #. Default: "Twitter username"
 #: ../userschema.py:34
-#, fuzzy
 msgid "label_twitter"
 msgstr "Twitter"
 
 #. Default: "Ubicació"
 #: ../userschema.py:47
-#, fuzzy
 msgid "label_ubicacio"
 msgstr "Ubicació"
 

@@ -10,7 +10,7 @@ from ulearn5.demo import _
 
 
 @implementer(ICatalogFactory)
-class UserPropertiesSoupCatalogFactory(object):
+class UserPropertiesSoupCatalogFactoryDEMO(object):
     """ The local user catalog (LUC) properties index factory. Almost all the
         properties have a field type "FullTextIndex" to allow wildcard queries
         on them. However, the FullTextIndex has a limitation its supported type
@@ -91,4 +91,4 @@ class UserPropertiesSoupCatalogFactory(object):
         return catalog
 
 
-grok.global_utility(UserPropertiesSoupCatalogFactory, name='user_properties_demo')
+grok.global_utility(UserPropertiesSoupCatalogFactoryDEMO, name='user_properties_demo')

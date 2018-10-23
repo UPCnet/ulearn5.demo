@@ -1,21 +1,21 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    i18n_domain="ulearn5.aspb">
+    i18n_domain="ulearn5.demo">
 
     <!-- Enhanced user properties adapter -->
     <adapter
-      factory=".userschema.UlearnUserDataPanelExtender"
+      factory=".userschema.DemoUserDataPanelExtender"
       provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
 
     <adapter
-      provides=".userschema.IUlearnUserSchema"
+      provides=".userschema.IDemoUserSchema"
       for="Products.CMFCore.interfaces.ISiteRoot"
-      factory=".userschema.UlearnUserDataSchemaAdapter"
+      factory=".userschema.DemoUserDataSchemaAdapter"
       />
 
     <adapter
-      factory=".userschema.UlearnRegistrationPanelExtender"
+      factory=".userschema.DemoRegistrationPanelExtender"
       provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
 
 </configure>

@@ -23,7 +23,7 @@ from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
 from ulearn5.core.widgets.visibility_widget import VisibilityFieldWidget
 
 
-class IUlearnUserSchema(model.Schema):
+class IDemoUserSchema(model.Schema):
     check_twitter_username = schema.Bool(
         title=_(u'', default=u''),
         required=False,
@@ -71,8 +71,8 @@ class IUlearnUserSchema(model.Schema):
     # )
 
 
-class UlearnUserDataSchemaAdapter(AccountPanelSchemaAdapter):
-    schema = IUlearnUserSchema
+class DemoUserDataSchemaAdapter(AccountPanelSchemaAdapter):
+    schema = IDemoUserSchema
 
     def get_check_twitter_username(self):
         return self._getProperty('check_twitter_username')
@@ -99,11 +99,11 @@ class UlearnUserDataSchemaAdapter(AccountPanelSchemaAdapter):
     check_telefon = property(get_check_telefon, set_check_telefon)
 
 
-class UlearnUserDataPanelExtender(extensible.FormExtender):
+class DemoUserDataPanelExtender(extensible.FormExtender):
     adapts(Interface, IUlearn5DemoLayer, UserDataPanel)
 
     def update(self):
-        fields = field.Fields(IUlearnUserSchema)
+        fields = field.Fields(IDemoUserSchema)
         # fields['fieldset_private'].widgetFactory = FieldsetFieldWidget
         # fields = fields.omit('telefon') # Si queremos quitar alguno de los que hemos añadido
         # self.remove('home_page') # Si queremos quitar los de la base (plone.app.users)
@@ -114,25 +114,9 @@ class UlearnUserDataPanelExtender(extensible.FormExtender):
         self.add(fields)
 
 
-class UlearnRegistrationPanelExtender(extensible.FormExtender):
+class DemoRegistrationPanelExtender(extensible.FormExtender):
     adapts(Interface, IUlearn5DemoLayer, BaseRegistrationForm)
 
     def update(self):
-        fields = field.Fields(IUlearnUserSchema)
-
+        fields = field.Fields(IDemoUserSchema)
         self.add(fields)
-
-
-@implementer(ICatalogFactory)
-class UserNewsSearchSoupCatalog(object):
-    def __call__(self, context):
-        catalog = Catalog()
-        idindexer = NodeAttributeIndexer('id')
-        catalog['id'] = CatalogFieldIndex(idindexer)
-        hashindex = NodeAttributeIndexer('searches')
-        catalog['searches'] = CatalogKeywordIndex(hashindex)
-
-        return catalog
-
-
-grok.global_utility(UserNewsSearchSoupCatalog, name='user_news_searches')

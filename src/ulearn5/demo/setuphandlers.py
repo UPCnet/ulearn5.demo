@@ -6,7 +6,7 @@ from zope.component import queryUtility
 from zope.interface import implementer
 
 from ulearn5.core.controlpanel import IUlearnControlPanelSettings
-from base5.core.controlpanel.interface import IGenwebControlPanelSettings
+from base5.core.controlpanel.core import IBaseCoreControlPanelSettings
 
 import transaction
 
@@ -63,7 +63,7 @@ def setupVarious(context):
     site_tool.toolbar_logo = u'/++theme++ulearn5.demo/assets/images/toolbarlogo.svg'
 
     # Define user properties extender
-    base_tool = registry.forInterface(IGenwebControlPanelSettings)
+    base_tool = registry.forInterface(IBaseCoreControlPanelSettings)
     base_tool.user_properties_extender = 'user_properties_demo'
 
     transaction.commit()

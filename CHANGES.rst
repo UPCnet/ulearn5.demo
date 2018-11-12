@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.2 (unreleased)
+1.2 (2018-11-12)
 ----------------
 
-- Nothing changed yet.
-
+* Update ulearn5.theme.browser.views_templates.ulearncustom.css.pt [Alberto Duran]
 
 1.1 (2018-10-29)
 ----------------

@@ -16,13 +16,37 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "Language: en\n"
 
-#: ../configure.zcml:21
+#: ../configure.zcml:31
 msgid "Installs the ulearn5.demo add-on."
 msgstr "Installs the ulearn5.demo add-on."
 
-#: ../configure.zcml:30
+#: ../configure.zcml:40
 msgid "Uninstalls the ulearn5.demo add-on."
 msgstr "Uninstalls the ulearn5.demo add-on."
+
+#: ../indexers.py:49
+msgid "check_telefon"
+msgstr "Check telefon"
+
+#: ../indexers.py:49
+msgid "check_twitter_username"
+msgstr "Check twitter"
+
+#: ../indexers.py:49
+msgid "check_ubicacio"
+msgstr "Check ubicacio"
+
+#: ../indexers.py:49
+msgid "description"
+msgstr "Description"
+
+#: ../indexers.py:49
+msgid "email"
+msgstr "Email"
+
+#: ../indexers.py:49
+msgid "fullname"
+msgstr "Fullname"
 
 #. Default: "Contacte telefònic"
 #: ../userschema.py:61
@@ -39,6 +63,10 @@ msgstr "Fill in your Twitter username."
 msgid "help_ubicacio"
 msgstr "Computer area / Company / Department"
 
+#: ../indexers.py:49
+msgid "home_page"
+msgstr "Home page"
+
 #. Default: "Telèfon"
 #: ../userschema.py:60
 msgid "label_telefon"
@@ -54,10 +82,30 @@ msgstr "Twitter username"
 msgid "label_ubicacio"
 msgstr "Location"
 
-#: ../configure.zcml:21
+#: ../indexers.py:49
+msgid "location"
+msgstr "Location"
+
+#: ../indexers.py:49
+msgid "telefon"
+msgstr "Telefon"
+
+#: ../indexers.py:49
+msgid "twitter_username"
+msgstr "Twitter"
+
+#: ../indexers.py:49
+msgid "ubicacio"
+msgstr "Ubication"
+
+#: ../configure.zcml:31
 msgid "ulearn5.demo"
 msgstr "ulearn5.demo"
 
-#: ../configure.zcml:30
+#: ../configure.zcml:40
 msgid "ulearn5.demo (unistall)"
 msgstr "ulearn5.demo (unistall)"
+
+#: ../indexers.py:49
+msgid "username"
+msgstr "Username"

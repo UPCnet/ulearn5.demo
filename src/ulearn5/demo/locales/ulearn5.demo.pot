@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-10-04 13:58+0000\n"
+"POT-Creation-Date: 2018-11-21 10:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,12 +21,36 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: ../configure.zcml:21
+#: ../configure.zcml:31
 msgid "Installs the ulearn5.demo add-on."
 msgstr ""
 
-#: ../configure.zcml:30
+#: ../configure.zcml:40
 msgid "Uninstalls the ulearn5.demo add-on."
+msgstr ""
+
+#: ../indexers.py:49
+msgid "check_telefon"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "check_twitter_username"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "check_ubicacio"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "description"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "email"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "fullname"
 msgstr ""
 
 #. Default: "Contacte telefònic"
@@ -44,6 +68,10 @@ msgstr ""
 msgid "help_ubicacio"
 msgstr ""
 
+#: ../indexers.py:49
+msgid "home_page"
+msgstr ""
+
 #. Default: "Telèfon"
 #: ../userschema.py:60
 msgid "label_telefon"
@@ -59,10 +87,30 @@ msgstr ""
 msgid "label_ubicacio"
 msgstr ""
 
-#: ../configure.zcml:21
+#: ../indexers.py:49
+msgid "location"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "telefon"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "twitter_username"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "ubicacio"
+msgstr ""
+
+#: ../configure.zcml:31
 msgid "ulearn5.demo"
 msgstr ""
 
-#: ../configure.zcml:30
+#: ../configure.zcml:40
 msgid "ulearn5.demo (unistall)"
+msgstr ""
+
+#: ../indexers.py:49
+msgid "username"
 msgstr ""

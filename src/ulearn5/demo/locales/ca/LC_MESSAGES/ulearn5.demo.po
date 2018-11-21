@@ -16,13 +16,37 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "Language: ca\n"
 
-#: ../configure.zcml:21
+#: ../configure.zcml:31
 msgid "Installs the ulearn5.demo add-on."
 msgstr "Instal·la el complement ulearn5.demo."
 
-#: ../configure.zcml:30
+#: ../configure.zcml:40
 msgid "Uninstalls the ulearn5.demo add-on."
 msgstr "Desinstal·la el complement ulearn5.demo."
+
+#: ../indexers.py:49
+msgid "check_telefon"
+msgstr "Habilitar/Deshabilitar visualització del telèfon"
+
+#: ../indexers.py:49
+msgid "check_twitter_username"
+msgstr "Habilitar/Deshabilitar visualització del twitter"
+
+#: ../indexers.py:49
+msgid "check_ubicacio"
+msgstr "Habilitar/Deshabilitar visualització de la ubicació"
+
+#: ../indexers.py:49
+msgid "description"
+msgstr "Descripció"
+
+#: ../indexers.py:49
+msgid "email"
+msgstr "Adreça de correu"
+
+#: ../indexers.py:49
+msgid "fullname"
+msgstr "Nom complet"
 
 #. Default: "Contacte telefònic"
 #: ../userschema.py:61
@@ -39,6 +63,10 @@ msgstr "Introdueix el teu nom d'usuari de Twitter"
 msgid "help_ubicacio"
 msgstr "Equip, Àrea / Companyia / Departament"
 
+#: ../indexers.py:49
+msgid "home_page"
+msgstr "Pàgina d'inici"
+
 #. Default: "Telèfon"
 #: ../userschema.py:60
 msgid "label_telefon"
@@ -54,10 +82,30 @@ msgstr "Twitter"
 msgid "label_ubicacio"
 msgstr "Ubicació"
 
-#: ../configure.zcml:21
+#: ../indexers.py:49
+msgid "location"
+msgstr "Localització"
+
+#: ../indexers.py:49
+msgid "telefon"
+msgstr "Telèfon"
+
+#: ../indexers.py:49
+msgid "twitter_username"
+msgstr "Twitter"
+
+#: ../indexers.py:49
+msgid "ubicacio"
+msgstr "Ubicació"
+
+#: ../configure.zcml:31
 msgid "ulearn5.demo"
 msgstr "ulearn5.demo"
 
-#: ../configure.zcml:30
+#: ../configure.zcml:40
 msgid "ulearn5.demo (unistall)"
 msgstr "Desinstal·la: ulearn5.demo"
+
+#: ../indexers.py:49
+msgid "username"
+msgstr "Usuari"

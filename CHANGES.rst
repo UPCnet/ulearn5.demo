@@ -2,11 +2,11 @@ Changelog
 =========
 
 
-1.3 (unreleased)
+1.3 (2018-11-26)
 ----------------
 
-- Nothing changed yet.
-
+* Header [Iago López Fernández]
+* Traducciones vista profile [Iago López Fernández]
 
 1.2 (2018-11-12)
 ----------------

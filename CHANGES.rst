@@ -2,11 +2,11 @@ Changelog
 =========
 
 
-1.4 (unreleased)
+1.4 (2018-12-04)
 ----------------
 
-- Nothing changed yet.
-
+* Enlace cambio de contraseña [Iago López Fernández]
+* Arreglar enlace reset_menu + Nominas [Iago López Fernández]
 
 1.3 (2018-11-26)
 ----------------

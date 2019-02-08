@@ -41,10 +41,12 @@
           use_external python:auth and external_login_url and not external_login_iframe;
           target request/target|nothing;
           target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
-          dades_noticies context/get_news;
-          col_login python:test(dades_noticies, 'col-md-6 noticies-left', 'col-md-12');
           ztu modules/ZTUtils;
-          ulearn_utils context/@@ulearn.utils;">
+          ulearn_utils context/@@ulearn.utils;
+          dades_noticies nothing;
+          col_login string:'col-md-12'">
+          <!-- dades_noticies context/get_news; -->
+          <!-- col_login python:test(dades_noticies, 'col-md-6 noticies-left', 'col-md-12'); -->
           <div class="portalMessage error pat-cookietrigger" style="display:none">
             <strong i18n:translate="">
             Error

@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.8 (unreleased)
+1.8 (2019-02-11)
 ----------------
 
-- Nothing changed yet.
-
+* Quitar noticias publicas del login [Iago López Fernández]
 
 1.7 (2019-01-31)
 ----------------

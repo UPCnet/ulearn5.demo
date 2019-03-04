@@ -37,11 +37,9 @@
           join_url request/join_url|nothing;
           join_url python:test(join_url is not None and isURLInPortal(join_url), join_url, join);
           use_normal python:auth and not external_login_url;
-          use_iframe python:auth and external_login_url and external_login_iframe;
           use_external python:auth and external_login_url and not external_login_iframe;
           target request/target|nothing;
           target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
-          ztu modules/ZTUtils;
           ulearn_utils context/@@ulearn.utils;
           dades_noticies nothing;
           col_login string:'col-md-12'">
@@ -93,7 +91,8 @@
                     tal:attributes="value request/target|nothing" />
                   <input type="hidden"
                     name="mail_password_url"
-                    value="https://identitatdigital.upc.edu/gcredencials/"/>
+                    value=""
+                    tal:attributes="value request/mail_password_url|nothing"/>
                   <input type="hidden"
                     name="join_url"
                     value=""
@@ -204,21 +203,6 @@
                     i18n:translate="label_click_here_to_retrieve">we can send you a new one</a></span>.
                 </p>
               </div>
-              <div id="login-new-user"
-                tal:condition="python:join_url and use_normal">
-                <strong i18n:translate="heading_new_user">
-                New user?
-                </strong>
-                <p i18n:translate="description_no_account">
-                  If you do not have an account here, head over to the
-                  <span i18n:name="registration_form">
-                  <a href=""
-                    tal:define="join_url python:test(came_from, join_url+test(join_url.find('?')==-1, '?', '&amp;')+ztu.make_query(came_from=came_from), join_url);"
-                    tal:attributes="href join_url; target target;"
-                    i18n:translate="description_no_account_registration_linktext"
-                    >registration form</a></span>.
-                </p>
-              </div>
             </div>
             <div class="col-md-6 noticies-right" tal:condition="dades_noticies">
               <h2>Notícies</h2>
@@ -252,35 +236,6 @@
               </div>
             </div>
           </div>
-          <tal:use_iframe condition="use_iframe">
-            <form action="#"
-              method="get"
-              id="login_form"
-              name="login_form"
-              class="iframe-wrapper"
-              tal:define="params python:dict(next=request.URL1+'/logged_in', target='_parent', ajax_load=True, ajax_include_head=True, mail_password_url=https://identitatdigital.upc.edu/gcredencials/, join_url=join);
-              dummy python:came_from and params.update(dict(came_from=came_from));
-              src external_login_url"
-              tal:attributes="action src">
-              <div id="login-form">
-                <iframe name="login-form-iframe"
-                  id="login-form-iframe"
-                  tal:attributes="src python:external_login_url+test(join_url.find('?')==-1, '?', '&amp;')+ztu.make_query(params);"
-                  >
-                  <input tal:replace="structure python:ztu.make_hidden_input(params)" />
-                  <div class="formControls">
-                    <input id="sso"
-                      class="context"
-                      type="submit"
-                      name="submit"
-                      value="Log in"
-                      i18n:attributes="value label_log_in;"
-                      />
-                  </div>
-                </iframe>
-              </div>
-            </form>
-          </tal:use_iframe>
         </metal:login>
       </div>
     </metal:main>

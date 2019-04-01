@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.9 (unreleased)
+1.9 (2019-04-01)
 ----------------
 
-- Nothing changed yet.
-
+* Limpieza login [Iago López Fernández]
 
 1.8 (2019-02-11)
 ----------------

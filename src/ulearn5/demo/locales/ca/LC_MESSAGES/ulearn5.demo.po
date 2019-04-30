@@ -24,15 +24,15 @@ msgstr "Instal·la el complement ulearn5.demo."
 msgid "Uninstalls the ulearn5.demo add-on."
 msgstr "Desinstal·la el complement ulearn5.demo."
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "check_telefon"
 msgstr "Habilitar/Deshabilitar visualització del telèfon"
 
-#: ../indexers.py:49
+#: ../indexers.py:51
 msgid "check_twitter_username"
 msgstr "Habilitar/Deshabilitar visualització del twitter"
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "check_ubicacio"
 msgstr "Habilitar/Deshabilitar visualització de la ubicació"
 
@@ -49,36 +49,36 @@ msgid "fullname"
 msgstr "Nom complet"
 
 #. Default: "Contacte telefònic"
-#: ../userschema.py:61
+#: ../userschema.py:59
 msgid "help_telefon"
 msgstr "Contacte telefònic"
 
 #. Default: "Fill in your Twitter username."
-#: ../userschema.py:35
+#: ../userschema.py:33
 msgid "help_twitter"
 msgstr "Introdueix el teu nom d'usuari de Twitter"
 
 #. Default: "Equip, Àrea / Companyia / Departament"
-#: ../userschema.py:48
+#: ../userschema.py:46
 msgid "help_ubicacio"
 msgstr "Equip, Àrea / Companyia / Departament"
 
-#: ../indexers.py:49
+#: ../indexers.py:51
 msgid "home_page"
 msgstr "Pàgina d'inici"
 
 #. Default: "Telèfon"
-#: ../userschema.py:60
+#: ../userschema.py:58
 msgid "label_telefon"
 msgstr "Telèfon"
 
 #. Default: "Twitter username"
-#: ../userschema.py:34
+#: ../userschema.py:32
 msgid "label_twitter"
 msgstr "Twitter"
 
 #. Default: "Ubicació"
-#: ../userschema.py:47
+#: ../userschema.py:45
 msgid "label_ubicacio"
 msgstr "Ubicació"
 
@@ -86,15 +86,24 @@ msgstr "Ubicació"
 msgid "location"
 msgstr "Localització"
 
-#: ../indexers.py:49
+#: ../indexers.py:52
+#: ../userschema.py:72
+msgid "private_policy"
+msgstr "Política de privacitat"
+
+#: ../indexers.py:50
 msgid "telefon"
 msgstr "Telèfon"
 
-#: ../indexers.py:49
+#: ../indexers.py:52
+msgid "time_accepted_private_policy"
+msgstr "Dia en la que s'ha aceptat la política de privacitat"
+
+#: ../indexers.py:51
 msgid "twitter_username"
 msgstr "Twitter"
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "ubicacio"
 msgstr "Ubicació"
 

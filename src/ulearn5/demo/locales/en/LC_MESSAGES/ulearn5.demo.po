@@ -24,15 +24,15 @@ msgstr "Installs the ulearn5.demo add-on."
 msgid "Uninstalls the ulearn5.demo add-on."
 msgstr "Uninstalls the ulearn5.demo add-on."
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "check_telefon"
 msgstr "Check telefon"
 
-#: ../indexers.py:49
+#: ../indexers.py:51
 msgid "check_twitter_username"
 msgstr "Check twitter"
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "check_ubicacio"
 msgstr "Check ubicacio"
 
@@ -49,36 +49,36 @@ msgid "fullname"
 msgstr "Fullname"
 
 #. Default: "Contacte telefònic"
-#: ../userschema.py:61
+#: ../userschema.py:59
 msgid "help_telefon"
 msgstr "Telephone contact"
 
 #. Default: "Fill in your Twitter username."
-#: ../userschema.py:35
+#: ../userschema.py:33
 msgid "help_twitter"
 msgstr "Fill in your Twitter username."
 
 #. Default: "Equip, Àrea / Companyia / Departament"
-#: ../userschema.py:48
+#: ../userschema.py:46
 msgid "help_ubicacio"
 msgstr "Computer area / Company / Department"
 
-#: ../indexers.py:49
+#: ../indexers.py:51
 msgid "home_page"
 msgstr "Home page"
 
 #. Default: "Telèfon"
-#: ../userschema.py:60
+#: ../userschema.py:58
 msgid "label_telefon"
 msgstr "Phone"
 
 #. Default: "Twitter username"
-#: ../userschema.py:34
+#: ../userschema.py:32
 msgid "label_twitter"
 msgstr "Twitter username"
 
 #. Default: "Ubicació"
-#: ../userschema.py:47
+#: ../userschema.py:45
 msgid "label_ubicacio"
 msgstr "Location"
 
@@ -86,15 +86,24 @@ msgstr "Location"
 msgid "location"
 msgstr "Location"
 
-#: ../indexers.py:49
+#: ../indexers.py:52
+#: ../userschema.py:72
+msgid "private_policy"
+msgstr "Private policy"
+
+#: ../indexers.py:50
 msgid "telefon"
 msgstr "Telefon"
 
-#: ../indexers.py:49
+#: ../indexers.py:52
+msgid "time_accepted_private_policy"
+msgstr "Day on which the privacy policy was accepted"
+
+#: ../indexers.py:51
 msgid "twitter_username"
 msgstr "Twitter"
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "ubicacio"
 msgstr "Ubication"
 

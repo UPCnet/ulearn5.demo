@@ -46,7 +46,10 @@ class UserPropertiesSoupCatalogFactoryDEMO(object):
         The directory_icons is the dict containing the correspondency with the
         field names and the icon.
     """
-    properties = [_(u'username'), _(u'fullname'), _(u'email'), _(u'description'), _(u'location'), _(u'check_ubicacio'), _(u'ubicacio'), _(u'check_telefon'), _(u'telefon'), _(u'check_twitter_username'), _(u'twitter_username'), _(u'home_page')]
+    properties = [_(u'username'), _(u'fullname'), _(u'email'), _(u'description'), _(u'location'),
+                  _(u'check_ubicacio'), _(u'ubicacio'), _(u'check_telefon'), _(u'telefon'),
+                  _(u'check_twitter_username'), _(u'twitter_username'), _(u'home_page'),
+                  _(u'private_policy'), _(u'time_accepted_private_policy')]
 
     # public_properties = ['email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']
 

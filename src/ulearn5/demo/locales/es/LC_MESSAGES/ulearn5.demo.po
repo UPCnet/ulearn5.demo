@@ -24,15 +24,15 @@ msgstr "Instala el complemento ulearn5.demo."
 msgid "Uninstalls the ulearn5.demo add-on."
 msgstr "Desinstala el complemento ulearn5.demo."
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "check_telefon"
 msgstr "Habilitar/Deshabilitar visualización del teléfono"
 
-#: ../indexers.py:49
+#: ../indexers.py:51
 msgid "check_twitter_username"
 msgstr "Habilitar/Deshabilitar visualización del twitter"
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "check_ubicacio"
 msgstr "Habilitar/Deshabilitar visualización de la ubicación"
 
@@ -49,36 +49,36 @@ msgid "fullname"
 msgstr "Nombre completo"
 
 #. Default: "Contacte telefònic"
-#: ../userschema.py:61
+#: ../userschema.py:59
 msgid "help_telefon"
 msgstr "Indique un número de teléfono de contacto."
 
 #. Default: "Fill in your Twitter username."
-#: ../userschema.py:35
+#: ../userschema.py:33
 msgid "help_twitter"
 msgstr "Indique su nombre de usuario de Twitter."
 
 #. Default: "Equip, Àrea / Companyia / Departament"
-#: ../userschema.py:48
+#: ../userschema.py:46
 msgid "help_ubicacio"
 msgstr "Indique su ubicación dentro de la compañía y/o ubicación geográfica."
 
-#: ../indexers.py:49
+#: ../indexers.py:51
 msgid "home_page"
 msgstr "Página de inicio"
 
 #. Default: "Telèfon"
-#: ../userschema.py:60
+#: ../userschema.py:58
 msgid "label_telefon"
 msgstr "Teléfono"
 
 #. Default: "Twitter username"
-#: ../userschema.py:34
+#: ../userschema.py:32
 msgid "label_twitter"
 msgstr "Usuario de Twitter"
 
 #. Default: "Ubicació"
-#: ../userschema.py:47
+#: ../userschema.py:45
 msgid "label_ubicacio"
 msgstr "Ubicación"
 
@@ -86,15 +86,24 @@ msgstr "Ubicación"
 msgid "location"
 msgstr "Localización"
 
-#: ../indexers.py:49
+#: ../indexers.py:52
+#: ../userschema.py:72
+msgid "private_policy"
+msgstr "Política de privacidad"
+
+#: ../indexers.py:50
 msgid "telefon"
 msgstr "Teléfono"
 
-#: ../indexers.py:49
+#: ../indexers.py:52
+msgid "time_accepted_private_policy"
+msgstr "Día en la que se acepto la política de privacidad"
+
+#: ../indexers.py:51
 msgid "twitter_username"
 msgstr "Twitter"
 
-#: ../indexers.py:49
+#: ../indexers.py:50
 msgid "ubicacio"
 msgstr "Ubicación"
 

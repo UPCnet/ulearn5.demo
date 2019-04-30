@@ -8,4 +8,6 @@
  <property name="check_telefon" type="boolean"></property>
  <property name="language" type="string"></property>
  <property name="visible_userprofile_portlet" type="boolean"></property>
+ <property name="private_policy" type="boolean"></property>
+ <property name="time_accepted_private_policy" type="string"></property>
 </object>

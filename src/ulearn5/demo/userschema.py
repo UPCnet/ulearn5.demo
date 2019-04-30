@@ -1,26 +1,25 @@
 # -*- coding: utf-8 -*-
-from five import grok
+from plone import api
 from plone.app.users.browser.account import AccountPanelSchemaAdapter
 from plone.app.users.browser.register import BaseRegistrationForm
 from plone.app.users.browser.userdatapanel import UserDataPanel
-from plone.directives import form
+from plone.registry.interfaces import IRegistry
 from plone.supermodel import model
 from plone.z3cform.fieldsets import extensible
-from repoze.catalog.catalog import Catalog
-from repoze.catalog.indexes.field import CatalogFieldIndex
-from repoze.catalog.indexes.keyword import CatalogKeywordIndex
-from souper.interfaces import ICatalogFactory
-from souper.soup import NodeAttributeIndexer
 from z3c.form import field
 from zope import schema
 from zope.component import adapts
+from zope.component import queryUtility
 from zope.interface import Interface
-from zope.interface import implementer
 
+from ulearn5.core.controlpanel import IUlearnControlPanelSettings
+from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
+from ulearn5.core.widgets.private_policy_widget import PrivatePolicyFieldWidget
+from ulearn5.core.widgets.visibility_widget import VisibilityFieldWidget
 from ulearn5.demo import _
 from ulearn5.demo.interfaces import IUlearn5DemoLayer
-from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
-from ulearn5.core.widgets.visibility_widget import VisibilityFieldWidget
+
+import datetime
 
 
 class IDemoUserSchema(model.Schema):
@@ -70,6 +69,15 @@ class IDemoUserSchema(model.Schema):
         # readonly=True,
     # )
 
+    private_policy = schema.Bool(
+        title=_(u'private_policy'),
+        required=True
+    )
+
+    time_accepted_private_policy = schema.Text(
+        title=_(u'', default=u''),
+    )
+
 
 class DemoUserDataSchemaAdapter(AccountPanelSchemaAdapter):
     schema = IDemoUserSchema
@@ -98,6 +106,15 @@ class DemoUserDataSchemaAdapter(AccountPanelSchemaAdapter):
 
     check_telefon = property(get_check_telefon, set_check_telefon)
 
+    def get_private_policy(self):
+        return self._getProperty('private_policy')
+
+    def set_private_policy(self, value):
+        self._setProperty('time_accepted_private_policy', datetime.datetime.now().strftime("%H:%M:%S %d/%m/%Y"))
+        return self._setProperty('private_policy', value is not False)
+
+    private_policy = property(get_private_policy, set_private_policy)
+
 
 class DemoUserDataPanelExtender(extensible.FormExtender):
     adapts(Interface, IUlearn5DemoLayer, UserDataPanel)
@@ -110,6 +127,15 @@ class DemoUserDataPanelExtender(extensible.FormExtender):
         fields['check_twitter_username'].widgetFactory = VisibilityFieldWidget
         fields['check_ubicacio'].widgetFactory = VisibilityFieldWidget
         fields['check_telefon'].widgetFactory = VisibilityFieldWidget
+
+        # Private policy
+        fields['private_policy'].widgetFactory = PrivatePolicyFieldWidget
+        fields = fields.omit('time_accepted_private_policy')
+        registry = queryUtility(IRegistry)
+        ulearn_tool = registry.forInterface(IUlearnControlPanelSettings)
+        if ulearn_tool.url_private_policy == None or ulearn_tool.url_private_policy == '' or api.user.get_current().getProperty('private_policy', False):
+            fields = fields.omit('private_policy')
+
         self.form.fields['portrait'].widgetFactory = MaxPortraitFieldWidget
         self.add(fields)
 
@@ -119,4 +145,10 @@ class DemoRegistrationPanelExtender(extensible.FormExtender):
 
     def update(self):
         fields = field.Fields(IDemoUserSchema)
+        # fields['fieldset_private'].widgetFactory = FieldsetFieldWidget
+        fields['check_twitter_username'].widgetFactory = VisibilityFieldWidget
+        fields['check_ubicacio'].widgetFactory = VisibilityFieldWidget
+        fields['check_telefon'].widgetFactory = VisibilityFieldWidget
+        fields = fields.omit('time_accepted_private_policy')
+        fields = fields.omit('private_policy')
         self.add(fields)

@@ -45,12 +45,12 @@ def setupVarious(context):
 
     # Define colors of site
     context.settings = registry.forInterface(IUlearnControlPanelSettings)
-    context.settings.main_color = u'#003556'
-    context.settings.secondary_color = u'#003556'
+    context.settings.main_color = u'#71B52D'
+    context.settings.secondary_color = u'#71B52D'
     context.settings.background_property = u'transparent'
     context.settings.background_color = u'#EDF1F2'
-    context.settings.buttons_color_primary = u'#003556'
-    context.settings.buttons_color_secondary = u'#003556'
+    context.settings.buttons_color_primary = u'#71B52D'
+    context.settings.buttons_color_secondary = u'#71B52D'
     context.settings.maxui_form_bg = u'#E8E8E8'
     context.settings.alt_gradient_start_color = u'#FFFFFF'
     context.settings.alt_gradient_end_color = u'#FFFFFF'

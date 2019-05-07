@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.11 (unreleased)
+1.11 (2019-05-07)
 -----------------
 
-- Nothing changed yet.
-
+* New logo uShare [Pilar Marinas]
 
 1.10 (2019-05-02)
 -----------------

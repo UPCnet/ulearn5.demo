@@ -13,6 +13,8 @@ from zope.component import queryUtility
 from zope.interface import Interface
 
 from ulearn5.core.controlpanel import IUlearnControlPanelSettings
+from ulearn5.core.utils import isValidTwitterUsername
+from ulearn5.core.utils import stripTwitterUsername
 from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
 from ulearn5.core.widgets.private_policy_widget import PrivatePolicyFieldWidget
 from ulearn5.core.widgets.visibility_widget import VisibilityFieldWidget
@@ -34,6 +36,7 @@ class IDemoUserSchema(model.Schema):
         description=_(u'help_twitter',
                       default=u'Fill in your Twitter username.'),
         required=False,
+        constraint=isValidTwitterUsername
     )
 
     check_ubicacio = schema.Bool(
@@ -81,6 +84,16 @@ class IDemoUserSchema(model.Schema):
 
 class DemoUserDataSchemaAdapter(AccountPanelSchemaAdapter):
     schema = IDemoUserSchema
+
+    def get_twitter_username(self):
+        return self._getProperty('twitter_username')
+
+    def set_twitter_username(self, value):
+        if value:
+            value = stripTwitterUsername(value)
+        return self._setProperty('twitter_username', value)
+
+    twitter_username = property(get_twitter_username, set_twitter_username)
 
     def get_check_twitter_username(self):
         return self._getProperty('check_twitter_username')

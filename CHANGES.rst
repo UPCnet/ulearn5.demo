@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.12 (unreleased)
+1.12 (2019-09-02)
 -----------------
 
-- Nothing changed yet.
-
+* isValidTwitterUsername [Iago López Fernández]
 
 1.11 (2019-05-07)
 -----------------

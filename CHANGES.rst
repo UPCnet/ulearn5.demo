@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.13 (unreleased)
+1.13 (2019-10-17)
 -----------------
 
-- Nothing changed yet.
-
+* Añadir campos para el sistema de nóminas [Iago López Fernández]
 
 1.12 (2019-09-02)
 -----------------

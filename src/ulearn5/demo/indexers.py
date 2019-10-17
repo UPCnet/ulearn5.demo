@@ -47,12 +47,14 @@ class UserPropertiesSoupCatalogFactoryDEMO(object):
         field names and the icon.
     """
     properties = [_(u'username'), _(u'fullname'), _(u'email'), _(u'description'), _(u'location'),
+                  _(u'dni'), _(u'user_type'),
                   _(u'check_ubicacio'), _(u'ubicacio'), _(u'check_telefon'), _(u'telefon'),
                   _(u'check_twitter_username'), _(u'twitter_username'), _(u'home_page'),
                   _(u'private_policy'), _(u'time_accepted_private_policy')]
 
-    # public_properties = ['email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']
+    public_properties = ['email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']
 
+    # Add dni if required
     profile_properties = ['email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']
 
     directory_properties = ['email', 'telefon', 'location', 'ubicacio']
@@ -79,6 +81,10 @@ class UserPropertiesSoupCatalogFactoryDEMO(object):
         catalog['email'] = CatalogTextIndex(email)
         location = NodeAttributeIndexer('location')
         catalog['location'] = CatalogTextIndex(location)
+        dni = NodeAttributeIndexer('dni')
+        catalog['dni'] = CatalogTextIndex(dni)
+        user_type = NodeAttributeIndexer('user_type')
+        catalog['user_type'] = CatalogTextIndex(user_type)
         check_ubicacio = NodeAttributeIndexer('check_ubicacio')
         catalog['check_ubicacio'] = CatalogTextIndex(check_ubicacio)
         ubicacio = NodeAttributeIndexer('ubicacio')

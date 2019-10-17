@@ -13,6 +13,7 @@ from zope.component import queryUtility
 from zope.interface import Interface
 
 from ulearn5.core.controlpanel import IUlearnControlPanelSettings
+from ulearn5.core.hooks import packages_installed
 from ulearn5.core.utils import isValidTwitterUsername
 from ulearn5.core.utils import stripTwitterUsername
 from ulearn5.core.widgets.max_portrait_widget import MaxPortraitFieldWidget
@@ -25,6 +26,20 @@ import datetime
 
 
 class IDemoUserSchema(model.Schema):
+    dni = schema.TextLine(
+        title=_(u'label_dni', default=u'DNI'),
+        description=_(u'help_dni',
+                      default=u"Indica el teu DNI."),
+        required=False,
+    )
+
+    user_type = schema.Bool(
+        title=_(u'label_user_type', default=u'Tipus empleat'),
+        description=_(u'Si la opcio esta marcada, usuari te nomina'),
+        required=False,
+        default=False
+    )
+
     check_twitter_username = schema.Bool(
         title=_(u'', default=u''),
         required=False,
@@ -149,6 +164,19 @@ class DemoUserDataPanelExtender(extensible.FormExtender):
         if ulearn_tool.url_private_policy == None or ulearn_tool.url_private_policy == '' or api.user.get_current().getProperty('private_policy', False):
             fields = fields.omit('private_policy')
 
+        installed = packages_installed()
+        if 'ulearn5.nomines' in installed:
+            roles = api.user.get_roles(username=api.user.get_current().id)
+            isAdmin = 'WebMaster' in roles or 'Manager' in roles or 'Gestor Nomines' in roles
+            if not isAdmin:
+                fields['dni'].field.readonly = True
+                fields = fields.omit('user_type')
+            else:
+                fields['dni'].field.readonly = False
+        else:
+            fields = fields.omit('user_type')
+            fields = fields.omit('dni')
+
         self.form.fields['portrait'].widgetFactory = MaxPortraitFieldWidget
         self.add(fields)
 
@@ -164,4 +192,18 @@ class DemoRegistrationPanelExtender(extensible.FormExtender):
         fields['check_telefon'].widgetFactory = VisibilityFieldWidget
         fields = fields.omit('time_accepted_private_policy')
         fields = fields.omit('private_policy')
+
+        installed = packages_installed()
+        if 'ulearn5.nomines' in installed:
+            roles = api.user.get_roles(username=api.user.get_current().id)
+            isAdmin = 'WebMaster' in roles or 'Manager' in roles or 'Gestor Nomines' in roles
+            if not isAdmin:
+                fields['dni'].field.readonly = True
+                fields = fields.omit('user_type')
+            else:
+                fields['dni'].field.readonly = False
+        else:
+            fields = fields.omit('user_type')
+            fields = fields.omit('dni')
+
         self.add(fields)

@@ -118,3 +118,30 @@ msgstr "Desinstal·la: ulearn5.demo"
 #: ../indexers.py:49
 msgid "username"
 msgstr "Usuari"
+
+#: ../indexers.py:52
+msgid "dni"
+msgstr "DNI"
+
+#. Default: "Indica el teu DNI."
+#: ../userschema.py:89
+msgid "help_dni"
+msgstr "El DNI és necessari per fer servir el sistema de nòmines"
+
+#. Default: "DNI"
+#: ../userschema.py:88
+msgid "label_dni"
+msgstr "DNI"
+
+#: ../indexers.py:53
+msgid "user_type"
+msgstr "Tipus d'empleat"
+
+#. Default: "Tipus empleat"
+#: ../userschema.py:81
+msgid "label_user_type"
+msgstr "Empleat amb accés al sistema de nòmines"
+
+#: ../userschema.py:82
+msgid "Si la opcio esta marcada, usuari te nomina"
+msgstr "La opció marcada indica que l'usuari té nòmines al sistema."

@@ -118,3 +118,30 @@ msgstr "ulearn5.demo (unistall)"
 #: ../indexers.py:49
 msgid "username"
 msgstr "Username"
+
+#: ../indexers.py:52
+msgid "dni"
+msgstr "DNI"
+
+#. Default: "Indica el teu DNI."
+#: ../userschema.py:89
+msgid "help_dni"
+msgstr "DNI is needed to make use of payments system."
+
+#. Default: "DNI"
+#: ../userschema.py:88
+msgid "label_dni"
+msgstr "DNI"
+
+#: ../indexers.py:53
+msgid "user_type"
+msgstr "Employee type"
+
+#. Default: "Tipus empleat"
+#: ../userschema.py:81
+msgid "label_user_type"
+msgstr "Employee with access to the payroll system"
+
+#: ../userschema.py:82
+msgid "Si la opcio esta marcada, usuari te nomina"
+msgstr "If the option is checked, the user has a paysheet"

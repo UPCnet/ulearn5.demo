@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.14 (unreleased)
+1.14 (2019-12-12)
 -----------------
 
-- Nothing changed yet.
-
+* Traducciones [Iago López Fernández]
 
 1.13 (2019-10-17)
 -----------------

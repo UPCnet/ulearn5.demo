@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.15 (unreleased)
+1.15 (2020-03-23)
 -----------------
 
-- Nothing changed yet.
-
+* Añadir timezone del usuario [Iago López Fernández]
 
 1.14 (2019-12-12)
 -----------------

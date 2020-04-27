@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.16 (unreleased)
+1.16 (2020-04-27)
 -----------------
 
-- Nothing changed yet.
-
+* Add format_time in properties user [Pilar Marinas]
 
 1.15 (2020-03-23)
 -----------------

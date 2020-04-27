@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.17 (unreleased)
+1.17 (2020-04-27)
 -----------------
 
-- Nothing changed yet.
-
+* Añadir enlace menu - Informacio de usuarios y comunidades [Iago López Fernández]
 
 1.16 (2020-04-27)
 -----------------

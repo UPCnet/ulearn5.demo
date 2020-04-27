@@ -13,4 +13,5 @@
  <property name="private_policy" type="boolean"></property>
  <property name="time_accepted_private_policy" type="string"></property>
  <property name="timezone" type="string"></property>
+ <property name="format_time" type="string"></property>
 </object>

@@ -92,12 +92,6 @@
             <span aria-hidden="true" class="caret"></span>
           </a>
           <ul class="dropdown-menu pull-right" role="menu">
-            <li role="menuitem" tal:condition="viewlet/canManageNews">
-              <a href="#" tal:attributes="href string:${portal_url}/news">
-                <i class="fa fa-newspaper-o"></i>
-                <tal:footer i18n:translate="menu-gestio-noticies">Noticies</tal:footer>
-              </a>
-            </li>
             <li role="menuitem" tal:condition="viewlet/canManagePersonalBanners">
               <a tal:attributes="href string:${portal_url}/Members/${viewlet/currentUser}/banners">
                 <i class="fa fa-image"></i>

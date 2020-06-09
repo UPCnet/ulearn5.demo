@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.18 (unreleased)
+1.18 (2020-06-09)
 -----------------
 
-- Nothing changed yet.
-
+* Quitar noticias del menu de gestion [Iago López Fernández]
 
 1.17 (2020-04-27)
 -----------------

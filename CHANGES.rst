@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.19 (unreleased)
+1.19 (2020-09-08)
 -----------------
 
-- Nothing changed yet.
-
+* Añadir title y alt a los badges [Iago López Fernández]
 
 1.18 (2020-06-09)
 -----------------

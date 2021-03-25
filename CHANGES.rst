@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.20 (unreleased)
+1.20 (2021-03-25)
 -----------------
 
-- Nothing changed yet.
-
+* Add reset header and footer in menu [Pilar Marinas]
 
 1.19 (2020-09-08)
 -----------------

@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.21 (unreleased)
+1.21 (2021-09-13)
 -----------------
 
-- Nothing changed yet.
-
+* Menu gestion por macros [Iago López Fernández]
 
 1.20 (2021-03-25)
 -----------------

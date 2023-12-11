@@ -52,7 +52,7 @@ class UserPropertiesSoupCatalogFactoryDEMO(object):
                   _(u'check_twitter_username'), _(u'twitter_username'), _(u'home_page'),
                   _(u'private_policy'), _(u'time_accepted_private_policy')]
 
-    public_properties = ['email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']
+    public_properties = ['fullname', 'email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']
 
     # Add dni if required
     profile_properties = ['email', 'description', 'location', 'ubicacio', 'telefon', 'twitter_username', 'home_page']

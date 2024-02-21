@@ -2,11 +2,10 @@ Changelog
 =========
 
 
-1.22 (unreleased)
+1.22 (2024-02-21)
 -----------------
 
-- Nothing changed yet.
-
+* [ADD] fullname in searchable_text [Iago López]
 
 1.21 (2021-09-13)
 -----------------
